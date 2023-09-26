@@ -1,0 +1,693 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* CSS variables */
+
+:root {
+  /* --ff-primary: "Courgette", cursive; */
+  --ff-primary: "Yatra One", cursive;
+  --ff-secondary: "Cinzel", serif;
+
+  --ff-body: var(--ff-secondary);
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  --fs-400: 1rem;
+  --fs-600: 2rem;
+
+  --fs-body: var(--fs-400);
+}
+
+/* CSS */
+
+* {
+  transition: all 0.2s ease-out;
+}
+
+/* =============================
+            TYPOGRAPHY
+================================*/
+body {
+  font-family: var(--ff-body);
+  background-color: #0c192c;
+  color: #fff;
+}
+
+h1 {
+  font-family: var(--ff-primary);
+  color: #cac10d;
+  text-shadow: 0 0 10px #ded416, 0 0 20px #ded416, 0 0 40px #ded416,
+    0 0 60px #ded416, 0 0 80px #ded416, 0 0 160px #ded416;
+  font-size: var(--fs-600);
+  line-height: 0.7;
+  letter-spacing: 9px;
+  animation: h1ani 2s linear;
+  animation-iteration-count: 2;
+}
+
+@keyframes h1ani {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #cac10d;
+    text-shadow: 0 0 10px #ded416, 0 0 20px #ded416, 0 0 40px #ded416,
+      0 0 60px #ded416, 0 0 80px #ded416, 0 0 160px #ded416;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #928e3d;
+    text-shadow: none;
+  }
+}
+
+h2 {
+  /* border-bottom: 2px solid #4fc3dc; */
+  border-bottom: 2px solid #917a5c;
+  border-radius: 0px 0px 20px 5px;
+  margin-block: 1.5em;
+  padding-left: 0.6em;
+  letter-spacing: 1.5px;
+}
+
+p {
+  line-height: 1.5;
+  word-spacing: 3px;
+  letter-spacing: 1.5px;
+}
+
+.logo-sub-text {
+  color: #c8c8c8;
+}
+
+@media (max-width: 675px) {
+  h1 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: var(--fs-400);
+  }
+  .logo-sub-text {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+    padding-block: 0.6em;
+  }
+}
+
+/* =============================
+            LAYOUT
+================================*/
+/* header {
+  background-image: url('images/logo/bg.jpg');
+  background-size: cover;
+} */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+.btn {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.375rem;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #2c974b;
+}
+
+.btn:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em;
+}
+
+.container-logo-text {
+  margin-left: 2em;
+}
+
+.container-logo > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 100px;
+}
+
+/* ==================================================== */
+
+/* ====================== SLIDESHOW ========================*/
+
+.slideshow {
+  padding: 300px;
+  background-image: url("images/slideshow/image1.webp");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: slides 15s infinite ease-in-out;
+  -webkit-animation: slides 15s infinite ease-in-out;
+  -moz-animation: slides 15s infinite ease-in-out;
+}
+
+@keyframes slides {
+  0%,
+  100% {
+    background-image: url("images/slideshow/image1.webp");
+  }
+  20% {
+    background-image: url("images/slideshow/image3.webp");
+  }
+  40% {
+    background-image: url("images/slideshow/image4.webp");
+  }
+  60% {
+    background-image: url("images/slideshow/image2.webp");
+  }
+  80% {
+    background-image: url("images/slideshow/image5.webp");
+  }
+}
+
+/* ========================================================*/
+
+/* =================== STICKY SOCIAL-LINKS ============== */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar a img {
+  max-width: 40px;
+  padding: 0.2em;
+  cursor: pointer;
+}
+
+.fb-bg img {
+  background: #3b5999;
+}
+
+.insta-bg img {
+  background: #e4405f;
+}
+
+.whatsapp-bg img {
+  background: #25d366;
+}
+
+.mail-bg img {
+  background-color: #f57d00;
+}
+
+/* ========================================================*/
+
+/* ====================== ABOUT US =======================*/
+
+.about-us-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-us-container p {
+  max-width: 800px;
+}
+
+.about-us-container img {
+  border-radius: 20%;
+  flex-basis: 100%;
+  max-width: 190px;
+  max-height: 215px;
+  border: 3px solid #8f5118;
+}
+
+/* ========================================================*/
+
+/* ================== OUR SERVICES =======================*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin-top: 0.8em;
+  margin-inline: auto;
+  box-shadow: 0 0 30px #4fc3dc;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  background-color: #000000a2;
+  font-size: 1.3rem;
+  font-weight: var(--fw-bold);
+  padding: 1em;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ================================================================ */
+
+/* ================ READYMADE FURNITURES ========================== */
+
+.swiper {
+  max-width: 800px;
+  height: 100%;
+  box-shadow: 0 0 30px #4fc3dc;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swipe-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swipe-btn::before,
+.swipe-btn::after {
+  font-size: 22px;
+  color: #fff;
+}
+
+.swipe-btn:hover,
+.swipe-btn:focus {
+  background-color: rgba(0, 0, 0);
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  border: 1px solid #fff;
+  background-color: #4fc3dc;
+}
+
+.img-data {
+  position: absolute;
+  background-color: #000000a2;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+  width: 100%;
+  bottom: 0;
+  padding-block: 0.4em;
+  text-align: center;
+}
+
+/* =============================================================== */
+
+/* ==================== PLYWOOD DESIGN ========================== */
+
+.plywood-gallery {
+  display: flex;
+  gap: 10px;
+  padding: 0.7em;
+  max-width: 800px;
+  margin-inline: auto;
+  box-shadow: 0 0 30px #4fc3dc;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 676px) {
+  .column img {
+    transition: transform 0.4s;
+  }
+  .column img:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+}
+
+/* =============================================================== */
+
+/* ====================== LAMINATIONS =========================== */
+
+.lamination-container {
+  max-width: 800px;
+  columns: 4;
+  margin-inline: auto;
+  column-gap: 20px;
+  break-inside: avoid;
+}
+
+.lam-col {
+  position: relative;
+  margin-bottom: 0.56em;
+  box-shadow: 0 0 30px #4fc3dc;
+  border-radius: 10px;
+}
+
+.col-data {
+  position: absolute;
+  background-color: #000000;
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+  padding-block: 0.4em;
+  transition: opacity 1.5s;
+  cursor: pointer;
+}
+
+.lam-col img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .lam-col:hover .col-data {
+    opacity: 1;
+  }
+}
+
+/* ============================================================== */
+
+/* ====================== CONTACT US =========================== */
+
+.contact-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 800px;
+  border-radius: 14px;
+  -webkit-box-shadow: 10px 11px 29px -19px rgba(224, 221, 224, 0.79);
+  -moz-box-shadow: 10px 11px 29px -19px rgba(224, 221, 224, 0.79);
+  box-shadow: 0 0 30px #4fc3dc;
+  padding: 0.7em;
+  margin-inline: auto;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.contact-col img {
+  max-width: 50px;
+}
+
+/* ====================== FOOTER =========================== */
+
+.footer-wrapper {
+  background-color: #192f50;
+  border: 1px solid black;
+
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  padding-block: 1em;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  max-width: 40px;
+  margin: 0.7em;
+  margin-top: 0;
+}
+
+.address {
+  max-width:70%;
+}
+
+.copyright-text {
+  color: #e7ac60;
+}
+
+/* .socials img {
+  max-width: 90px;
+} */
+
+/* ============================================================== */
+
+@media (max-width: 675px) {
+  .container-logo > a {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-logo-text {
+    margin-left: 0;
+  }
+
+  .logo-img {
+    width: 30%;
+    margin-bottom: 0.7em;
+  }
+
+  .slideshow {
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    padding: 150px;
+  }
+
+  .about-us-container {
+    flex-direction: column-reverse;
+  }
+  .about-us-img {
+    width: 30%;
+    margin-inline: auto;
+  }
+
+  .text {
+    font-size: 0.7rem;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+  .contact-col img {
+    width: 10%;
+  }
+  .contact-text,
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .contact-text {
+    width: 50%;
+  }
+
+  .socials a {
+    width: 15%;
+  }
+
+  .lamination-container {
+    columns: 3;
+    column-gap: 10px;
+  }
+
+  .img-data {
+    font-size: 0.7rem;
+    font-weight: 100;
+    padding-block: 0.2em;
+  }
+
+  .swipe-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .swipe-btn::before,
+  .swipe-btn::after {
+    font-size: 0.7rem;
+  }
+
+  .col-data {
+    font-size: 0.7rem;
+    font-weight: 100;
+    padding-block: 0.2em;
+    opacity: 1;
+    background-color: #000000b1;
+  }
+}

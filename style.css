@@ -1,0 +1,436 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --ff-primary: "Courgette", cursive;
+  --ff-secondary: "Cinzel", serif;
+  --ff-body: var(--ff-secondary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-bold: 600;
+  --fw-semi-bold: 500;
+  --fw-regular: 400;
+
+  --fs-400: 1rem;
+  --fs-500: 1.6rem;
+  --fs-600: 2rem;
+
+  --fs-body: var(--fs-400);
+
+  --section-padding: 2em;
+}
+
+/* Utility Classes */
+
+body {
+  font-family: var(--ff-body);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-600);
+}
+.fs-secondary-heading {
+    font-size: var(--fs-500);
+}
+.fs-regular {
+  font-style: var(--fs-400);
+}
+
+.heading-bottom-border {
+    border-bottom: 6px solid #8F5118;
+    border-radius: 0px 0px 20px 5px;
+}
+
+.section-text {
+  padding: 0 var(--section-padding);
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS  */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-container {
+  width: 100%;
+  padding-block: 1em;
+  display: flex;
+}
+
+
+.header-container img {
+  max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Logo Heading */
+
+.logo-heading-container {
+  margin-block: auto;
+  min-width: 70%;
+  line-height: 1;
+}
+
+.logo-heading {
+  font-family: var(--ff-primary);
+}
+
+.logo-heading-container h1::first-letter {
+  color: rgb(10, 225, 225);
+  font-size: 1.7em;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* Slideshow */
+.slideshow {
+  padding-block: 200px;
+  background-image: url("images/slideshow/image1.jpg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: slides 15s infinite ease-in-out;
+}
+
+@keyframes slides {
+  0%, 100% {
+    background-image: url("images/slideshow/image1.jpg");
+  }
+  20% {
+    background-image: url("images/slideshow/image3.jpg");
+  }
+  40% {
+    background-image: url("images/slideshow/image4.jpg");
+  }
+  60% {
+    background-image: url("images/slideshow/image2.jpg");
+  }
+  80% {
+    background-image: url("images/slideshow/image5.jpg"); 
+  }
+}
+
+
+
+
+main {
+    width: 90%;
+    margin-inline: auto;
+}
+
+
+
+
+
+
+
+
+.about-us {
+    padding: var(--section-padding);
+}
+
+.about-us-text {
+    display: flex;
+    margin-inline: auto;
+    padding:  var(--section-padding);
+}
+
+
+.about-us-para {
+    width: 70%;
+    margin-top: 1em;
+}
+
+.about-us-img {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+.swiper {
+    width: 50%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+
+.ready-made-available-text, 
+.plywood-design-text,
+.laminations-text,
+.our-work-text,
+.contact-us-text {
+  margin-top: 1em;
+  padding-block: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-us-wrapper {
+  padding: 0 2em 2em 2em;
+}
+
+.book-appointment, .visit-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em ;
+  margin-inline: auto;
+  width: 85%;
+  box-shadow: 12px 17px 14px -12px rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 12px 17px 14px -12px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 12px 17px 14px -12px rgba(0, 0, 0, 0.4);
+border-radius: 14px 14px 14px 14px;
+-webkit-border-radius: 14px 14px 14px 14px;
+-moz-border-radius: 14px 14px 14px 14px;
+}
+
+
+.book-appointment {
+  margin-bottom: 1.3em;
+}
+
+.book-appointment img, .visit-us img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.contact-us-link {
+text-decoration: none;
+cursor: pointer;
+font-weight: var(--fw-bold);
+color: rgb(72, 76, 122);
+font-size: var(--fs-400);
+height: 40%;
+padding: 8px 24px;
+border-radius: 50px;
+background-image: linear-gradient(180deg,#fff,#f5f5fa);
+box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+transition: all .2s ease-out;
+}
+
+.contact-us-link:hover{
+  box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+}
+
+
+
+
+footer {
+  text-align: center;
+}
+
+.footer-wrapper {
+  color: #fff;
+  background-color: #8F5118;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+
+}
+
+.socials img {
+  height: 50px;
+  width: 50px;
+  margin: 1em;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 40em){
+
+  .fw-bold {
+    font-weight: var(--fw-bold);
+  }
+  .fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+  }
+  .fw-regular {
+    font-weight: var(--fw-regular);
+  }
+  
+  .fs-primary-heading {
+    font-size: 1.3rem;
+  }
+  .fs-secondary-heading {
+      font-size: 1.2rem;
+  }
+  .fs-regular {
+    font-size: var(--fs-400);
+  }
+
+  .logo-sub-text {
+    font-size: 0.7rem;
+  }
+
+  .about-us-text {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-us-para {
+    width: 100%;
+    font-size: var(--fs-400);
+  }
+
+  /* .contact-us-wrapper {
+    display: flex;
+  }
+
+  .book-appointment, .visit-us {
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    background-color: aqua;
+  }
+
+  .book-appointment img,
+   .book-appointment p,
+  .visit-us img,
+  .visit-us p {
+    margin-bottom: 3em;
+  }
+
+  .book-appointment p, 
+  .visit-us p{
+    font-size: .7rem;
+  }
+
+  .contact-us-link {
+    font-size: .7rem;
+    height: auto;
+  } */
+  
+}

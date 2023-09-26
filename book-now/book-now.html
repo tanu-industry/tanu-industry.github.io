@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="book-now.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container container-logo">
+        <a href="/">
+          <img class="logo-img" src="../images/logo/gold-logo.png" alt="" />
+          <div class="container-logo-text">
+            <h1 class="">TANU INDUSTRY</h1>
+            <p class="logo-sub-text">Interior Designing Company</p>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <section class="banner">
+      <p class="banner-text">contact us</p>
+    </section>
+
+    <main class="container">
+      <form
+        action="https://formsubmit.co/119bf96f204c8d43dd22accac7a6c5be"
+        method="POST"
+        id="contact_form"
+      >
+        <div class="name">
+          <label for="name_input"></label>
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            id="name_input"
+            required
+          />
+        </div>
+
+        <div class="telephone">
+          <label for="telephone_input"></label>
+          <input
+            type="text"
+            placeholder="Mobile No."
+            name="telephone"
+            id="telephone_input"
+            required
+          />
+        </div>
+
+        <div class="email">
+          <label for="email_input"></label>
+          <input
+            type="email"
+            placeholder="E-Mail (Optional)"
+            name="email"
+            id="email_input"
+          />
+        </div>
+
+        <div class="project">
+          <label for="project_type"></label>
+          <select
+            placeholder="Project Type"
+            name="project"
+            id="project_type"
+            required
+          >
+            <option disabled hidden selected>Type of Project</option>
+            <option>Building Project</option>
+            <option>Readymade Work</option>
+          </select>
+        </div>
+
+        <div class="projectlocation">
+          <label for="your_location"></label>
+          <select
+            placeholder="City/District"
+            name="location"
+            id="your_city"
+            required
+          >
+            <option disabled hidden selected>Select your city/district</option>
+            <option>Bangalore</option>
+            <option>Bellary</option>
+          </select>
+        </div>
+
+        <div class="message">
+          <label for="message"></label>
+          <textarea
+            name="message"
+            placeholder="I'd like to chat about"
+            id="message_input"
+            cols="30"
+            rows="5"
+            maxlength="150"
+          ></textarea>
+          <span id="char_count">150</span>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Send Message" id="form_button" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="socials">
+          <a
+            href="https://instagram.com/tanu_interiors?igshid=MzRlODBiNWFlZA=="
+            class="social-links"
+            ><img src="../icons/instagram.svg" alt=""
+          /></a>
+          <a href="" class="social-links"
+            ><img src="../icons/facebook.svg" alt=""
+          /></a>
+          <a href="https://wa.me/message/7AKTISV2GDPIO1" class="social-links"
+            ><img src="../icons/whatsapp.svg" alt=""
+          /></a>
+        </div>
+        <div class="address">
+          <p>
+            Plot No 253B, P2, Belur Industrial Area, Dharwad, Karnataka 580011
+          </p>
+        </div>
+        <div class="copyright-text fs-regular fw-bold">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Tanu Industry
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="book-now.js"></script>
+  </body>
+</html>

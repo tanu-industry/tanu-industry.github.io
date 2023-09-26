@@ -1,0 +1,320 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* CSS variables */
+
+:root {
+  --ff-primary: "Yatra One", cursive;
+  --ff-secondary: "Cinzel", serif;
+
+  --ff-body: var(--ff-secondary);
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  --fs-400: 1rem;
+  --fs-600: 2rem;
+
+  --fs-body: var(--fs-400);
+}
+
+/* CSS */
+
+body {
+  font-family: var(--ff-body);
+  background-color: #0c192c;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+/* ========= Header ========= */
+
+h1 {
+  font-family: var(--ff-primary);
+  color: #cac10d;
+  text-shadow: 0 0 10px #ded416, 0 0 20px #ded416, 0 0 40px #ded416,
+    0 0 60px #ded416, 0 0 80px #ded416, 0 0 160px #ded416;
+  font-size: var(--fs-600);
+  line-height: 0.7;
+  letter-spacing: 10px;
+  animation: h1ani 2s linear;
+  animation-iteration-count: 2;
+}
+
+@keyframes h1ani {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #cac10d;
+    text-shadow: 0 0 10px #ded416, 0 0 20px #ded416, 0 0 40px #ded416,
+      0 0 60px #ded416, 0 0 80px #ded416, 0 0 160px #ded416;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #928e3d;
+    text-shadow: none;
+  }
+}
+
+@media (max-width: 675px) {
+  h1 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 0.8rem;
+    padding-block: 0.6em;
+  }
+  h2 {
+    font-size: var(--fs-400);
+  }
+}
+
+.logo-sub-text {
+  color: #c8c8c8;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em;
+}
+
+.container-logo-text {
+  margin-left: 2em;
+}
+
+.container-logo > a {
+  text-decoration: none;
+  color: #13afa2;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 100px;
+}
+
+@media (max-width: 675px) {
+  .container-logo > a {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-logo-text {
+    margin-left: 0;
+  }
+
+  .logo-img {
+    width: 30%;
+    margin-bottom: 0.7em;
+  }
+}
+
+/* =========================================== */
+
+.banner {
+  background-image: url("banner.jpg");
+  background-color: #353535b3;
+  background-blend-mode: multiply;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+  text-shadow: 0 0 10px #4fc3dc, 0 0 20px #4fc3dc, 0 0 40px #4fc3dc,
+    0 0 60px #4fc3dc, 0 0 80px #4fc3dc, 0 0 160px #4fc3dc;
+}
+
+.banner-text {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+main {
+  /* border: solid 3px #474544; */
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 1em;
+  padding: 2em;
+  text-align: center;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+textarea {
+  height: 150px;
+  padding-right: 2em;
+  resize: none;
+}
+
+option {
+  color: #000000;
+}
+
+.message {
+  position: relative;
+}
+
+.message span {
+  pointer-events: none;
+  user-select: none;
+  right: 1%;
+  bottom: 20%;
+  color: #607189;
+  padding-left: 0.7em;
+}
+
+#char_count {
+  position: absolute;
+}
+
+#form_button {
+  background: #4fc3dc;
+  border: solid 2px #474544;
+  color: #000000;
+  cursor: pointer;
+  font-size: 0.875em;
+  font-weight: var(--fw-semi-bold);
+  outline: none;
+  padding: 1.2em 2.2em;
+}
+
+#form_button:hover {
+  box-shadow: 0 0 10px #4fc3dc, 0 0 20px #4fc3dc, 0 0 40px #4fc3dc;
+  color: #fff;
+  font-weight: var(--fw-bold);
+}
+
+.footer-wrapper {
+  background-color: #192f50;
+  border: 1px solid black;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.address {
+  max-width:70%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  max-width: 40px;
+  margin: 0.7em;
+}
+
+.copyright-text {
+  color: #e7ac60;
+}

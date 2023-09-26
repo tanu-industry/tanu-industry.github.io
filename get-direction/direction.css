@@ -1,0 +1,222 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --ff-primary: "Courgette", cursive;
+  --ff-secondary: "Cinzel", serif;
+  --ff-body: var(--ff-secondary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-bold: 600;
+  --fw-semi-bold: 500;
+  --fw-regular: 400;
+
+  --fs-400: 1rem;
+  --fs-500: 1.2rem;
+  --fs-600: 2rem;
+
+  --fs-body: var(--fs-400);
+
+  --section-padding: 2em;
+}
+
+
+/* CSS  */
+
+body {
+  font-family: var(--ff-body);
+  background: #f2f3eb;
+}
+
+/* ========= Header ========= */
+
+header {
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-600);
+  line-height: 0.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+@media (max-width: 675px) {
+  h1 {
+    font-size: var(--fs-400);
+  }
+  p {
+    font-size: 0.7rem;
+    padding-block: 0.6em;
+  }
+}
+
+.logo-sub-text {
+  color: #707070;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.container-logo-text {
+  margin-left: 2em;
+}
+
+.container-logo > a {
+  text-decoration: none;
+  color: #13afa2;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 100px;
+}
+
+@media (max-width: 675px) {
+  .container-logo > a {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .logo-img {
+    width: 30%;
+    margin-bottom: 0.7em;
+  }
+}
+
+/* =========================================== */
+
+.banner {
+  background-image: url('banner.webp');
+  background-color: #35353565;
+  background-blend-mode: multiply;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  text-align: center;
+  background-size: cover;
+}
+
+.banner-text {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+  border: solid 3px #474544;
+  width: 90%;
+  max-width: 950px;
+  margin-block: 1em;
+  margin-inline: auto;
+  padding: 0.7em;
+  justify-content: center;
+}
+
+.address-text {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.footer-wrapper {
+  background-color: #8f5218;
+  border: 1px solid black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  max-width: 50px;
+  margin: 0.7em;
+}
+
+@media (max-width: 675px) {
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
