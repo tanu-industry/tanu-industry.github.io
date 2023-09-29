@@ -1,0 +1,30 @@
+.laminates__wrapper {
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-inline: auto;
+  max-width: 1000px;
+}
+
+.laminates__wrapper-data {
+    position: relative;
+    cursor: pointer;
+}
+
+.laminate__wrapper-data-title {
+  position: absolute;
+  background-color: #000000a2;
+  font-family: var(--cinzel);
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-block: 0.4em;
+  cursor: pointer;
+  text-wrap: wrap;
+}
+
+@media (max-width: 725px) {
+  .laminates__wrapper {
+    justify-content: center;
+  }
+}

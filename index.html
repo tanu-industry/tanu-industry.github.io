@@ -3,366 +3,303 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Tanu Industries" />
     <meta
       name="description"
-      content="Revitalize your living spaces with our premier interior design solutions. 
-      Discover endless inspiration, expert tips, and curated design concepts tailored to your unique style. 
-      Our talented team of designers will guide you from concept to completion, 
-      ensuring exceptional results that transform your space into a stunning sanctuary. 
-      Explore the latest trends, innovative ideas, and functional designs that elevate your living experience. 
-      From modern minimalism to timeless elegance, find the perfect balance of aesthetics and functionality. 
-      Unlock the full potential of your home with our personalized design services, 
-      as we create an environment that reflects your personality and enhances your well-being. 
-      Elevate your living experience and create a space you'll love to come home to. 
-      Explore our portfolio and get inspired now!"
+      content="Explore the latest trends, innovative ideas, and functional designs that elevate your living experience. From modern minimalism to timeless elegance, find the perfect balance of aesthetics and functionality."
     />
-    <title>Tanu Industry</title>
+
+    <!-- Favicon Icon -->
     <link
       rel="shortcut icon"
-      href="icons/favicon-32x32.png"
+      href="assets/icons/favicon-32x32.png"
       type="image/x-icon"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Yatra+One&display=swap"
-      rel="stylesheet"
-    />
+
+    <!--Link CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
+    <title>Tanu Industries</title>
   </head>
   <body>
+    <!-- Header  -->
     <header>
-      <div class="container container-logo">
-        <a href="/">
-          <img class="logo-img" src="images/logo/gold-logo.png" alt="" />
-          <div class="container-logo-text">
-            <h1 class="">TANU INDUSTRY</h1>
-            <p class="logo-sub-text">Interior Designing Company</p>
+      <div class="container logo__container">
+        <a href="/" class="flex flex-center">
+          <img
+            class="logo__container-img"
+            src="assets/images/logo/gold-logo.png"
+            alt="Logo"
+          />
+          <div class="logo__container-text">
+            <h1 class="logo__container-heading">TANU INDUSTRIES</h1>
+            <p class="logo__container-sub-heading">
+              Interior Designing Company
+            </p>
           </div>
         </a>
       </div>
     </header>
 
+    <!-- Slideshow -->
+    <!-- <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="assets/images/slideshow/image1.webp"
+            alt="slideshow-image"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/slideshow/image2.webp"
+            alt="slideshow-image"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/slideshow/image3.webp"
+            alt="slideshow-image"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/slideshow/image4.webp"
+            alt="slideshow-image"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/slideshow/image5.webp"
+            alt="slideshow-image"
+          />
+        </div>
+      </div>
+    </div> -->
+
     <div class="slideshow"></div>
 
-    <main>
-      <div class="icon-bar">
-        <a href="" class="fb-bg" target="_blank">
-          <!-- click here to follow -->
-          <img src="icons/facebook.svg" alt="" />
-        </a>
+    <!-- About Us -->
+    <section class="container about__us">
+      <h2 class="section-heading" id="about-us">About Us</h2>
+      <p class="about__us-para">
+        Welcome to Tanu Industries, here we strive to elevate the quality of
+        life for our clients through innovative and personalized interior design
+        solutions. Whether you have a clear vision or need guidance to discover
+        your style, we are here to assist you every step of the way.
+      </p>
+      <p class="about__us-para">
+        At Tanu Industries, we believe that a well-designed space has the power
+        to inspire, comfort, and enrich lives. Let us be your partners in
+        crafting the perfect space that tells your unique story.
+      </p>
+    </section>
 
-        <a
-          href="https://instagram.com/tanu_interiors?igshid=MzRlODBiNWFlZA=="
-          class="insta-bg"
-          target="_blank"
-        >
-          <!-- click here to follow -->
-          <img src="icons/instagram.svg" alt="" />
-        </a>
-
-        <a
-          href="https://wa.me/message/7AKTISV2GDPIO1"
-          class="whatsapp-bg"
-          target="_blank"
-        >
-          <!-- click here to chat -->
-          <img src="icons/whatsapp.svg" alt="" />
-        </a>
-
-        <a href="mailto:tanuinndustry2408@gmail.com" class="mail-bg">
-          <!-- Click here to Mail -->
-          <img src="icons/mail.svg" alt="" />
-        </a>
-      </div>
-
-      <div class="container">
-        <h2 class="">ABOUT US</h2>
-        <div class="about-us-container">
-          <p>
-            Experience exceptional interior design solutions that transform your
-            space into a stylish sanctuary. Discover endless inspiration, expert
-            tips, and curated design concepts. Our talented team of designers
-            will guide you from concept to completion, ensuring exceptional
-            results.<br />Explore the latest trends and innovative ideas to
-            create a home that reflects your unique taste and personality.
-            Unlock the full potential of your space with functional and
-            beautiful designs. Elevate your living experience with our premier
-            interior design services. Create a harmonious environment that
-            you'll love coming home to
-          </p>
-          <!-- <img
-            class="about-us-img"
-            src="images/about-us/profile.svg"
-            alt="About Us"
-          /> -->
+    <!-- Our Services -->
+    <section class="container our__services">
+      <h2 class="section-heading" id="our-services">Our Services</h2>
+      <!-- Swiper -->
+      <div class="swiper ourServicesSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/images/services/image-1.webp"
+              alt="Our Services Image"
+            />
+            <div class="img__desc">Libraries / Study Halls</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/services/image-2.webp"
+              alt="Our Services Image"
+            />
+            <div class="img__desc">School</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/services/image-3.webp"
+              alt="Our Services Image"
+            />
+            <div class="img__desc">Hospitals</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/services/image-4.webp"
+              alt="Our Services Image"
+            />
+            <div class="img__desc">Office Space</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/services/image-5.webp"
+              alt="Our Services Image"
+            />
+            <div class="img__desc">Banks</div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
+    </section>
 
-      <div class="container">
-        <h2>OUR SERVICES</h2>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="images/services/image-1.webp" alt="" />
-            <div class="text">Libraries / Study Halls</div>
+    <!-- Readymade Furnitures -->
+    <section class="container readymade__furnitures">
+      <h2 class="section-heading" id="readymade-furnitures">
+        Readymade Furnitures
+      </h2>
+      <!-- Swiper -->
+      <div class="swiper rdymde-frntr">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/images/readymade-furniture/image-1.webp"
+              alt="Readymade Furnitures Image"
+            />
+            <div class="text">Office Desk</div>
           </div>
-
-          <div class="mySlides fade">
-            <img src="images/services/image-2.webp" alt="" />
-            <div class="text">School</div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/readymade-furniture/image-2.webp"
+              alt="Readymade Furnitures Image"
+            />
+            <div class="text">Wooden Shelves</div>
           </div>
-
-          <div class="mySlides fade">
-            <img src="images/services/image-3.webp" alt="" />
-            <div class="text">Hospitals</div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/readymade-furniture/image-4.webp"
+              alt="Readymade Furnitures Image"
+            />
+            <div class="text">Study Table</div>
           </div>
-
-          <div class="mySlides fade">
-            <img src="images/services/image-4.webp" alt="" />
-            <div class="text">Office Space</div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/readymade-furniture/image-5.webp"
+              alt="Readymade Furnitures Image"
+            />
+            <div class="text">Almirah</div>
           </div>
-
-          <div class="mySlides fade">
-            <img src="images/services/image-5.webp" alt="" />
-            <div class="text">Banks</div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/readymade-furniture/image-6.webp"
+              alt="Readymade Furnitures Image"
+            />
+            <div class="text">Wooden Sofa</div>
           </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-      </div>
-
-      <div class="container">
-        <h2>READYMADE FURNITURES</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="images/readymade-furniture/image-1.webp"
-                alt=""
-                srcset=""
-              />
-              <div class="img-data">
-                <span class="furniture-text">Office Desk</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/readymade-furniture/image-2.webp"
-                alt=""
-                srcset=""
-              />
-              <div class="img-data">
-                <span class="furniture-text">Wooden Shelves</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/readymade-furniture/image-3.webp"
-                alt=""
-                srcset=""
-              />
-              <div class="img-data">
-                <span class="furniture-text">TV Stands</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/readymade-furniture/image-4.webp"
-                alt=""
-                srcset=""
-              />
-              <div class="img-data">
-                <span class="furniture-text">Study Table</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/readymade-furniture/image-5.webp"
-                alt=""
-                srcset=""
-              />
-              <div class="img-data">
-                <span class="furniture-text">Almirah</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/readymade-furniture/image-6.webp"
-                alt=""
-                srcset=""
-              />
-              <div class="img-data">
-                <span class="furniture-text">Wooden Sofa</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/readymade-furniture/image-7.webp"
-                alt=""
-                srcset=""
-              />
-              <div class="img-data">
-                <span class="furniture-text">Wooden Wardrobe</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next swipe-btn"></div>
-          <div class="swiper-button-prev swipe-btn"></div>
-          <!-- <div class="swiper-pagination"></div> -->
-        </div>
-      </div>
-
-      <div class="container">
-        <h2>PLYWOOD DESIGNS</h2>
-
-        <div class="plywood-gallery">
-          <div class="column">
-            <div class="column-photo">
-              <img src="images/plywood-design/image-1.webp" alt="" />
-            </div>
-            <div class="column-photo">
-              <img src="images/plywood-design/image-2.webp" alt="" />
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="column-photo">
-              <img src="images/plywood-design/image-3.webp" alt="" />
-            </div>
-            <div class="column-photo">
-              <img src="images/plywood-design/image-4.webp" alt="" />
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="column-photo">
-              <img src="images/plywood-design/image-5.webp" alt="" />
-            </div>
-            <div class="column-photo">
-              <img src="images/plywood-design/image-6.webp" alt="" />
-            </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/images/readymade-furniture/image-7.webp"
+              alt="Readymade Furnitures Image"
+            />
+            <div class="text">Wooden Wardrobe</div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="container">
-        <h2>LAMINATIONS</h2>
-        <div class="lamination-container">
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">American Cherry</span>
-            </div>
-            <img src="images/laminations/american-cherry_6-min.jpg" alt="" />
+    <!-- Plywood Brands -->
+    <section class="container plywood__brands">
+      <h2 class="section-heading" id="plywood-brands">Plywood Brands</h2>
+      <div class="brand__logos flex">
+        <!-- <div class="column"> -->
+        <img
+          src="assets/images/plywood-brands/austin-plywood-logo.webp"
+          alt="Austin Plywood Logo"
+        />
+        <img
+          src="assets/images/plywood-brands/centuryply-logo.webp"
+          alt="Centuryply Logo"
+        />
+        <!-- </div> -->
+        <!-- <div class="column"> -->
+        <img
+          src="assets/images/plywood-brands/greenply-logo.webp"
+          alt="Greenply Logo"
+        />
+        <img
+          src="assets/images/plywood-brands/trojan-logo.webp"
+          alt="Trojan Logo"
+        />
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <!-- Laminates -->
+    <section class="container laminates">
+      <h2 class="section-heading" id="laminates">Laminates</h2>
+      <div class="laminates__wrapper flex">
+        <div class="laminates__wrapper-data">
+          <div class="laminate__wrapper-data-title">
+            <span class="laminates-name">Acrylic Sheet</span>
           </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Croma</span>
-            </div>
-            <img src="images/laminations/croma.jpg" alt="" />
+          <img
+            src="assets/images/laminations/acrylic-sheet.webp"
+            alt="Acrylic Sheet"
+          />
+        </div>
+        <div class="laminates__wrapper-data">
+          <div class="laminate__wrapper-data-title">
+            <span class="laminates-name">Crystal Sheet</span>
           </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Ebony</span>
-            </div>
-            <img src="images/laminations/ebony---c-min (1).jpg" alt="" />
+          <img
+            src="assets/images/laminations/crystal-sheet.webp"
+            alt="Crystal Sheet"
+          />
+        </div>
+        <div class="laminates__wrapper-data">
+          <div class="laminate__wrapper-data-title">
+            <span class="laminates-name">Decorative Laminate</span>
           </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Fieltro</span>
-            </div>
-            <img src="images/laminations/fieltro.jpg" alt="" />
+          <img
+            src="assets/images/laminations/decorative-laminate.webp"
+            alt="Decorative Laminate"
+          />
+        </div>
+        <div class="laminates__wrapper-data">
+          <div class="laminate__wrapper-data-title">
+            <span class="laminates-name">Glossy Laminate</span>
           </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Glassy Wooden</span>
-            </div>
-            <img src="images/laminations/glassy wooden.jpg" alt="" />
+          <img
+            src="assets/images/laminations/glossy-laminate.webp"
+            alt="Glossy Laminate"
+          />
+        </div>
+        <div class="laminates__wrapper-data">
+          <div class="laminate__wrapper-data-title">
+            <span class="laminates-name">Polymer Sheet</span>
           </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Hello</span>
-            </div>
-            <img src="images/laminations/image-1.jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Zebrano</span>
-            </div>
-            <img src="images/laminations/zebrano---c-min.jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Hello</span>
-            </div>
-            <img src="images/laminations/images (8).jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Nylon</span>
-            </div>
-            <img src="images/laminations/nylon-u6320-fr.jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Persimmon</span>
-            </div>
-            <img src="images/laminations/persimmon.jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Sapele</span>
-            </div>
-            <img src="images/laminations/sapele---c-min (1).jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Smoked Oak</span>
-            </div>
-            <img src="images/laminations/smoked_oak---c-min.jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Suede</span>
-            </div>
-            <img src="images/laminations/suede.jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Teak Grandeur</span>
-            </div>
-            <img src="images/laminations/teak_grandeur---c-min.jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">Wardrobe</span>
-            </div>
-            <img src="images/laminations/wardobe.jpg" alt="" />
-          </div>
-          <div class="lam-col">
-            <div class="col-data">
-              <span class="lamination-text">White Oak</span>
-            </div>
-            <img src="images/laminations/white-oak.jpg" alt="" />
-          </div>
+          <img
+            src="assets/images/laminations/polymer-sheet.webp"
+            alt="Polymer Sheet"
+          />
         </div>
       </div>
+    </section>
 
-      <div class="container">
-        <h2>CONTACT US</h2>
+    <!-- Our Standard Hardware -->
+    <section class="container our__standard__hw">
+      <h2 class="section-heading" id="our-std-hw">Our Standard Hardwares</h2>
+    </section>
 
-        <div class="contact-col book">
-          <img src="icons/mobile.svg" alt="" />
-          <p class="contact-text">Book An Appointment</p>
-          <a href="book-now/book-now.html" class="btn">Book Now</a>
+    <!-- Contact Us -->
+    <section class="container contact__us">
+      <h2 class="section-heading" id="contact-us">Contact Us</h2>
+      <div class="contact__us-wrapper">
+        <div class="contact__us-col book flex">
+          <img src="assets/icons/mobile.svg" alt="Mobile Icon" />
+          <p class="contact__us-text">Book An Appointment</p>
+          <a href="pages/book-now/book-now.html" class="btn" target="_blank"
+            >Book Now</a
+          >
         </div>
 
-        <div class="contact-col visit">
-          <img src="icons/location.svg" alt="" />
-          <p class="contact-text">Visit Us</p>
+        <div class="contact__us-col visit flex">
+          <img src="assets/icons/location.svg" alt="Location Icon" />
+          <p class="contact__us-text">Visit Us</p>
           <a
             href="https://goo.gl/maps/voo7MB1h5CAzAq6H6"
             target="_blank"
@@ -371,41 +308,47 @@
           >
         </div>
       </div>
-    </main>
+    </section>
 
+    <!-- Footer -->
     <footer>
-      <div class="footer-wrapper">
-        <div class="socials">
-          <a
-            href="https://instagram.com/tanu_interiors?igshid=MzRlODBiNWFlZA=="
-            class="social-links"
-            ><img src="icons/instagram.svg" alt=""
-          /></a>
-          <a href="" class="social-links"
-            ><img src="icons/facebook.svg" alt=""
-          /></a>
-          <a href="https://wa.me/message/7AKTISV2GDPIO1" class="social-links"
-            ><img src="icons/whatsapp.svg" alt=""
-          /></a>
-        </div>
-        <div class="address">
-          <p>
-            Plot No 253B, P2, Belur Industrial Area, Dharwad, Karnataka 580011
-          </p>
-        </div>
-        <div class="copyright-text fs-regular fw-bold">
-          <p>
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            Tanu Industry
-          </p>
-        </div>
+      <div class="footer__socials">
+        <a
+          href="https://instagram.com/tanu_interiors?igshid=MzRlODBiNWFlZA=="
+          class="footer__socials-link"
+        >
+          <img src="assets/icons/instagram.svg" alt="Instagram Icon" />
+        </a>
+        <a href="#!" class="footer__socials-link">
+          <img src="assets/icons/facebook.svg" alt="Facebook Icon" />
+        </a>
+        <a
+          href="https://wa.me/message/7AKTISV2GDPIO1"
+          class="footer__socials-link"
+        >
+          <img src="assets/icons/whatsapp.svg" alt="Whatsapp Icon" />
+        </a>
+      </div>
+
+      <div class="footer__address">
+        <p>
+          Plot No 253B, P2, Belur Industrial Area, Dharwad, Karnataka-580011
+        </p>
+      </div>
+
+      <div class="footer__copyright">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Tanu Industry
+        </p>
       </div>
     </footer>
 
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

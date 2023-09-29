@@ -1,0 +1,39 @@
+.contact__us-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 14px 14px 53px 11px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  border-radius: 14px;
+  padding: 0.7em;
+  margin-inline: auto;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: 0.9s all;
+}
+
+.contact__us-col:hover,
+.contact__us-col:focus {
+  box-shadow: var(--btn-shadow);
+  transform: scale(1.03);
+}
+
+.contact__us-col img {
+  max-width: 50px;
+}
+
+@media (max-width: 675px) {
+  .contact__us-col img {
+    width: 10%;
+  }
+  .contact__us-text {
+    font-size: 0.8rem;
+  }
+
+  .contact__us-text {
+    width: 50%;
+  }
+}

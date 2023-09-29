@@ -1,0 +1,28 @@
+.ourServicesSwiper {
+  max-width: 1000px;
+}
+
+.ourServicesSwiper .swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.img__desc {
+  font-family: var(--cinzel);
+  font-size: 1.3rem;
+  position: absolute;
+  background-color: #000000a2;
+  width: 100%;
+  bottom: 0;
+  padding-block: 1em;
+  text-align: center;
+}
+
+@media (max-width: 675px) {
+ .img__desc {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  letter-spacing: 4px;
+ }
+}
