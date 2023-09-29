@@ -102,9 +102,13 @@ p {
 
 @media (max-width: 675px) {
   p {
-    font-size: .8rem;
+    font-size: 0.6rem;
   }
-    .btn {
+
+  h2 {
+    font-size: 0.8rem;
+  }
+  .btn {
     font-size: 0.7rem;
     width: 120px;
   }
