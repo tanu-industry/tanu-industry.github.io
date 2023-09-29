@@ -43,7 +43,10 @@ header {
 @media (max-width: 675px) {
   .logo__container-img {
     margin-bottom: 0.6em;
-    transform: translateX(15px);
+  }
+
+  .logo__container-text {
+    margin-left: 0;
   }
 
   .logo__container-heading {
