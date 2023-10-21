@@ -1,56 +1,45 @@
-header {
-  width: 100%;
-  background-color: #0c192c;
-  box-shadow: 0px 18px 26px -10px rgba(0, 0, 0, 0.1);
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 0.7;
+  letter-spacing: 4px;
+  padding: 1.2rem;
 }
 
-.logo__container a {
+.header-heading {
+  font-family: var(--yatra-one);
+  color: #A7727D;
+}
+
+.header-sub-heading {
+  font-size: 1rem;
+}
+
+.logo-container-link {
   flex-wrap: wrap;
 }
 
-.logo__container-img {
-  max-width: 100px;
+.logo-img {
+  max-width: 80px;
 }
 
-.logo__container-text {
-  margin-left: 2em;
-  text-align: center;
-}
-
-.logo__container-heading {
-  font-family: var(--yatra-one);
-  color: #cac10d;
-  font-size: 2rem;
-  line-height: 0.7;
-  letter-spacing: 9px;
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 20px #cac10d;
+@media (max-width: 500px) {
+  .logo-container {
+    gap: 10px;
   }
-  to {
-    text-shadow: 0 0 30px #ded416, 0 0 10px #928e3d;
+  .header-heading {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .header-sub-heading {
+    font-size: 0.7rem;
+  }
+
+  .logo-img {
+    width: 40px;
   }
 }
 
-.logo__container-sub-heading {
-  color: #c8c8c8;
-  font-family: var(--cinzel);
-}
 
-@media (max-width: 675px) {
-  .logo__container-img {
-    margin-bottom: 0.6em;
-  }
-
-  .logo__container-text {
-    margin-left: 0;
-  }
-
-  .logo__container-heading {
-    font-size: 1rem;
-    line-height: 1.2;
-  }
-}

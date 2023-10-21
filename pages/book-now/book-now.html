@@ -23,20 +23,18 @@
   <body>
     <!-- Header  -->
     <header>
-      <div class="container logo__container">
-        <a href="/" class="flex flex-center">
+      <div class="logo-container">
+        <a href="/" class="logo-container-link">
           <img
-            class="logo__container-img"
             src="../../assets/images/logo/gold-logo.png"
-            alt="Logo"
+            alt="Tanu Industry Logo"
+            class="logo-img"
           />
-          <div class="logo__container-text">
-            <h1 class="logo__container-heading">TANU INDUSTRIES</h1>
-            <p class="logo__container-sub-heading">
-              Interior Designing Company
-            </p>
-          </div>
         </a>
+        <div class="logo-container-text">
+          <h1 class="header-heading">TANU INDUSTRIES</h1>
+          <p class="header-sub-heading">Interior Designing Company</p>
+        </div>
       </div>
     </header>
 
@@ -52,7 +50,7 @@
         method="POST"
         id="contact_form"
       >
-      <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_captcha" value="false" />
         <div class="name">
           <label for="name_input"></label>
           <input
@@ -170,39 +168,90 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer__socials">
-        <a
-          href="https://instagram.com/tanu_interiors?igshid=MzRlODBiNWFlZA=="
-          class="footer__socials-link"
-        >
-          <img src="../../assets/icons/instagram.svg" alt="Instagram Icon" />
-        </a>
-        <a href="#!" class="footer__socials-link">
-          <img src="../../assets/icons/facebook.svg" alt="Facebook Icon" />
-        </a>
-        <a
-          href="https://wa.me/message/7AKTISV2GDPIO1"
-          class="footer__socials-link"
-        >
-          <img src="../../assets/icons/whatsapp.svg" alt="Whatsapp Icon" />
-        </a>
-      </div>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img
+            style="height: 50px"
+            src="../../assets/images/logo/gold-logo.png"
+            alt=""
+          />
+          <h3>Tanu Industries</h3>
+        </div>
 
-      <div class="footer__address">
-        <p>
-          Plot No 253B, P2, Belur Industrial Area, Dharwad, Karnataka-580011
+        <p class="footer-links">
+          <a href="/" class="link-1">Home</a>
+
+          <a href="#about-us">About</a>
+
+          <a href="#our-services">Services</a>
+
+          <a href="#plywood-brands">Plywoods</a>
+
+          <a href="#laminations">Laminations</a>
+
+          <a href="#hw">Hardwares</a>
         </p>
-      </div>
 
-      <div class="footer__copyright">
-        <p>
-          Copyright &copy;
+        <p class="footer-company-name">
+          Tanu Industries - Interior Designing Company ©
           <script>
             document.write(new Date().getFullYear());
           </script>
-          Tanu Industry
         </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <img
+            src="../../assets/icons/marker.svg"
+            alt=""
+            class="footer-center-icon"
+          />
+          <p>
+            <span>Plot No 253B, P2, Belur Industrial Area,</span> Dharwad,
+            Karnataka-580011
+          </p>
+        </div>
+
+        <!-- <div>
+          img
+          <p>+1.555.555.5555</p>
+        </div> -->
+
+        <div>
+          <img
+            src="../../assets/icons/envelope.svg"
+            alt=""
+            class="footer-center-icon"
+          />
+          <p>
+            <a href="mailto:tanuindustry2408@gmail.com"
+              >tanuindustry2408@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Tanu Industries provides innovative and personalized interior design
+          solutions or guidance to the perfect space that tells your unique
+          story.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><img src="../../assets/icons/fb.svg" alt="" /></a>
+          <a
+            href="https://instagram.com/tanu_interiors?igshid=MzRlODBiNWFlZA=="
+          >
+            <img src="../../assets/icons/insta.svg" alt="" />
+          </a>
+          <a href="https://wa.me/message/7AKTISV2GDPIO1">
+            <img src="../../assets/icons/wa.svg" alt="" />
+          </a>
+        </div>
       </div>
     </footer>
 

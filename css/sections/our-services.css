@@ -1,28 +1,21 @@
-.ourServicesSwiper {
-  max-width: 1000px;
-}
-
-.ourServicesSwiper .swiper-slide img {
-  display: block;
-  object-fit: cover;
+.services-cell {
   width: 100%;
 }
 
-.img__desc {
-  font-family: var(--cinzel);
-  font-size: 1.3rem;
+.services-cell img {
+  width: 100%;
+}
+
+.img-desc {
+  max-width: 700px;
+  width: 35%;
+  padding: 0.45rem;
+  background-color: var(--btn-color);
+  color: #fff;
+  font-size: 1.2rem;
   position: absolute;
-  background-color: #000000a2;
-  width: 100%;
-  bottom: 0;
-  padding-block: 1em;
-  text-align: center;
-}
-
-@media (max-width: 675px) {
- .img__desc {
-  font-size: 0.8rem;
-  font-weight: bolder;
-  letter-spacing: 4px;
- }
+  z-index: 10;
+  top: 3%;
+  border: 1px solid white;
+  border-radius: 0 30px 30px 0;
 }

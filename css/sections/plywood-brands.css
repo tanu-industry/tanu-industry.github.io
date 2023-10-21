@@ -1,15 +1,53 @@
-.brand__logos {
-  gap: 10px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0.7em;
-  max-width: 1000px;
-  margin-inline: auto;
-  box-shadow: 14px 14px 53px 11px rgba(0, 0, 0, 0.1);
+.plywood-brands-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
 
-@media (max-width: 405px) {
-  .brand__logos {
-    justify-content: center;
+.plywood-brands-slider::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+}
+
+.plywood-brands-slider::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+}
+
+.pwood-wrapper {
+  display: inline-block;
+  animation: 20s moving-wood linear infinite;
+}
+
+.pwood-wrapper img {
+  margin: 0 1.3rem;
+}
+
+@keyframes moving-wood {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 500px) {
+  .pwood-wrapper img {
+    width: 100px;
+    margin: 0 0.8rem;
+  }
+  .plywood-brands-slider::before,
+  .plywood-brands-slider::after {
+    width: 50px;
   }
 }

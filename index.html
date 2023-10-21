@@ -8,7 +8,6 @@
       name="description"
       content="Explore the latest trends, innovative ideas, and functional designs that elevate your living experience. From modern minimalism to timeless elegance, find the perfect balance of aesthetics and functionality."
     />
-
     <!-- Favicon Icon -->
     <link
       rel="shortcut icon"
@@ -17,338 +16,284 @@
     />
 
     <!--Link CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- Swiper CSS -->
+    <!-- CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>Tanu Industries</title>
   </head>
+
   <body>
-    <!-- Header  -->
     <header>
-      <div class="container logo__container">
-        <a href="/" class="flex flex-center">
+      <div class="logo-container">
+        <a href="/" class="logo-container-link">
           <img
-            class="logo__container-img"
             src="assets/images/logo/gold-logo.png"
-            alt="Logo"
+            alt="Tanu Industry Logo"
+            class="logo-img"
           />
-          <div class="logo__container-text">
-            <h1 class="logo__container-heading">TANU INDUSTRIES</h1>
-            <p class="logo__container-sub-heading">
-              Interior Designing Company
-            </p>
-          </div>
         </a>
+        <div class="logo-container-text">
+          <h1 class="header-heading">TANU INDUSTRIES</h1>
+          <p class="header-sub-heading">Interior Designing Company</p>
+        </div>
       </div>
     </header>
 
-    <!-- Slideshow -->
-    <!-- <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="assets/images/slideshow/image1.webp"
-            alt="slideshow-image"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/images/slideshow/image2.webp"
-            alt="slideshow-image"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/images/slideshow/image3.webp"
-            alt="slideshow-image"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/images/slideshow/image4.webp"
-            alt="slideshow-image"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/images/slideshow/image5.webp"
-            alt="slideshow-image"
-          />
+    <button id="top-btn" title="Go to top">&#10148;</button>
+
+    <div class="main-carousel">
+      <div class="carousel-cell">
+        <img src="assets/images/slideshow/image-1.webp" alt="" />
+        <div class="banner-box">
+          <span class="line"></span>
+          <h1>Designing Dreams</h1>
+          <p>Your Journey to Exceptional Interiors Starts Here.</p>
         </div>
       </div>
-    </div> -->
-
-    <div class="slideshow"></div>
-
-    <!-- About Us -->
-    <section class="container about__us">
-      <h2 class="section-heading" id="about-us">About Us</h2>
-      <p class="about__us-para">
-        Welcome to Tanu Industries, here we strive to elevate the quality of
-        life for our clients through innovative and personalized interior design
-        solutions. Whether you have a clear vision or need guidance to discover
-        your style, we are here to assist you every step of the way.
-      </p>
-      <p class="about__us-para">
-        At Tanu Industries, we believe that a well-designed space has the power
-        to inspire, comfort, and enrich lives. Let us be your partners in
-        crafting the perfect space that tells your unique story.
-      </p>
-    </section>
-
-    <!-- Our Services -->
-    <section class="container our__services">
-      <h2 class="section-heading" id="our-services">Our Services</h2>
-      <!-- Swiper -->
-      <div class="swiper ourServicesSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="assets/images/services/image-1.webp"
-              alt="Our Services Image"
-            />
-            <div class="img__desc">Libraries / Study Halls</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/services/image-2.webp"
-              alt="Our Services Image"
-            />
-            <div class="img__desc">School</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/services/image-3.webp"
-              alt="Our Services Image"
-            />
-            <div class="img__desc">Hospitals</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/services/image-4.webp"
-              alt="Our Services Image"
-            />
-            <div class="img__desc">Office Space</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/services/image-5.webp"
-              alt="Our Services Image"
-            />
-            <div class="img__desc">Banks</div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+      <div class="carousel-cell">
+        <img src="assets/images/slideshow/image-2.webp" alt="" />
       </div>
-    </section>
-
-    <!-- Readymade Furnitures -->
-    <section class="container readymade__furnitures">
-      <h2 class="section-heading" id="readymade-furnitures">
-        Readymade Furnitures
-      </h2>
-      <!-- Swiper -->
-      <div class="swiper rdymde-frntr">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="assets/images/readymade-furniture/image-1.webp"
-              alt="Readymade Furnitures Image"
-            />
-            <div class="text">Office Desk</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/readymade-furniture/image-2.webp"
-              alt="Readymade Furnitures Image"
-            />
-            <div class="text">Wooden Shelves</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/readymade-furniture/image-4.webp"
-              alt="Readymade Furnitures Image"
-            />
-            <div class="text">Study Table</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/readymade-furniture/image-5.webp"
-              alt="Readymade Furnitures Image"
-            />
-            <div class="text">Almirah</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/readymade-furniture/image-6.webp"
-              alt="Readymade Furnitures Image"
-            />
-            <div class="text">Wooden Sofa</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/images/readymade-furniture/image-7.webp"
-              alt="Readymade Furnitures Image"
-            />
-            <div class="text">Wooden Wardrobe</div>
-          </div>
-        </div>
+      <div class="carousel-cell">
+        <img src="assets/images/slideshow/image-3.webp" alt="" />
       </div>
-    </section>
-
-    <!-- Plywood Brands -->
-    <section class="container plywood__brands">
-      <h2 class="section-heading" id="plywood-brands">Plywood Brands</h2>
-      <div class="brand__logos flex">
-        <!-- <div class="column"> -->
-        <img
-          src="assets/images/plywood-brands/austin-plywood-logo.webp"
-          alt="Austin Plywood Logo"
-        />
-        <img
-          src="assets/images/plywood-brands/centuryply-logo.webp"
-          alt="Centuryply Logo"
-        />
-        <!-- </div> -->
-        <!-- <div class="column"> -->
-        <img
-          src="assets/images/plywood-brands/greenply-logo.webp"
-          alt="Greenply Logo"
-        />
-        <img
-          src="assets/images/plywood-brands/trojan-logo.webp"
-          alt="Trojan Logo"
-        />
-        <!-- </div> -->
+      <div class="carousel-cell">
+        <img src="assets/images/slideshow/image-4.webp" alt="" />
       </div>
-    </section>
-
-    <!-- Laminates -->
-    <section class="container laminates">
-      <h2 class="section-heading" id="laminates">Laminates</h2>
-      <div class="laminates__wrapper flex">
-        <div class="laminates__wrapper-data">
-          <div class="laminate__wrapper-data-title">
-            <span class="laminates-name">Acrylic Sheet</span>
-          </div>
-          <img
-            src="assets/images/laminations/acrylic-sheet.webp"
-            alt="Acrylic Sheet"
-          />
-        </div>
-        <div class="laminates__wrapper-data">
-          <div class="laminate__wrapper-data-title">
-            <span class="laminates-name">Crystal Sheet</span>
-          </div>
-          <img
-            src="assets/images/laminations/crystal-sheet.webp"
-            alt="Crystal Sheet"
-          />
-        </div>
-        <div class="laminates__wrapper-data">
-          <div class="laminate__wrapper-data-title">
-            <span class="laminates-name">Decorative Laminate</span>
-          </div>
-          <img
-            src="assets/images/laminations/decorative-laminate.webp"
-            alt="Decorative Laminate"
-          />
-        </div>
-        <div class="laminates__wrapper-data">
-          <div class="laminate__wrapper-data-title">
-            <span class="laminates-name">Glossy Laminate</span>
-          </div>
-          <img
-            src="assets/images/laminations/glossy-laminate.webp"
-            alt="Glossy Laminate"
-          />
-        </div>
-        <div class="laminates__wrapper-data">
-          <div class="laminate__wrapper-data-title">
-            <span class="laminates-name">Polymer Sheet</span>
-          </div>
-          <img
-            src="assets/images/laminations/polymer-sheet.webp"
-            alt="Polymer Sheet"
-          />
-        </div>
+      <div class="carousel-cell">
+        <img src="assets/images/slideshow/image-5.webp" alt="" />
       </div>
-    </section>
+    </div>
 
-    <!-- Our Standard Hardware -->
-    <section class="container our__standard__hw">
-      <h2 class="section-heading" id="our-std-hw">Our Standard Hardwares</h2>
-    </section>
-
-    <!-- Contact Us -->
-    <section class="container contact__us">
-      <h2 class="section-heading" id="contact-us">Contact Us</h2>
-      <div class="contact__us-wrapper">
-        <div class="contact__us-col book flex">
-          <img src="assets/icons/mobile.svg" alt="Mobile Icon" />
-          <p class="contact__us-text">Book An Appointment</p>
-          <a href="pages/book-now/book-now.html" class="btn" target="_blank"
-            >Book Now</a
-          >
-        </div>
-
-        <div class="contact__us-col visit flex">
-          <img src="assets/icons/location.svg" alt="Location Icon" />
-          <p class="contact__us-text">Visit Us</p>
-          <a
-            href="https://goo.gl/maps/voo7MB1h5CAzAq6H6"
-            target="_blank"
-            class="btn"
-            >Get Location</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer__socials">
-        <a
-          href="https://instagram.com/tanu_interiors?igshid=MzRlODBiNWFlZA=="
-          class="footer__socials-link"
-        >
-          <img src="assets/icons/instagram.svg" alt="Instagram Icon" />
-        </a>
-        <a href="#!" class="footer__socials-link">
-          <img src="assets/icons/facebook.svg" alt="Facebook Icon" />
-        </a>
-        <a
-          href="https://wa.me/message/7AKTISV2GDPIO1"
-          class="footer__socials-link"
-        >
-          <img src="assets/icons/whatsapp.svg" alt="Whatsapp Icon" />
-        </a>
-      </div>
-
-      <div class="footer__address">
-        <p>
-          Plot No 253B, P2, Belur Industrial Area, Dharwad, Karnataka-580011
+    <main>
+      <section class="about-us" id="about-us">
+        <h2>About Us</h2>
+        <p class="about-us-para">
+          Welcome to Tanu Industries, here we strive to elevate the quality of
+          life for our clients through innovative and personalized interior
+          design solutions. Whether you have a clear vision or need guidance to
+          discover your style, we are here to assist you every step of the way.
         </p>
-      </div>
+        <p class="about-us-para">
+          At Tanu Industries, we believe that a well-designed space has the
+          power to inspire, comfort, and enrich lives. Let us be your partners
+          in crafting the perfect space that tells your unique story.
+        </p>
+      </section>
 
-      <div class="footer__copyright">
-        <p>
-          Copyright &copy;
+      <section class="our-services" id="our-services">
+        <h2>Our Services</h2>
+        <div class="services-crousel">
+          <div class="services-cell">
+            <img src="assets/images/services/image-1.webp" alt="" />
+            <div class="img-desc">
+              <p>Modular Kitchens</p>
+            </div>
+          </div>
+          <div class="services-cell">
+            <img src="assets/images/services/image-2.webp" alt="" />
+            <div class="img-desc">
+              <p>Wardrobes</p>
+            </div>
+          </div>
+          <div class="services-cell">
+            <img src="assets/images/services/image-3.webp" alt="" />
+            <div class="img-desc">
+              <p>Schools / Colleges</p>
+            </div>
+          </div>
+          <div class="services-cell">
+            <img src="assets/images/services/image-4.webp" alt="" />
+            <div class="img-desc">
+              <p>Hospitals</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="plywood" id="plywood-brands">
+        <h2>Plywood Brands</h2>
+        <div class="plywood-brands-slider">
+          <div class="pwood-wrapper">
+            <img src="assets/images/plywood-brands/trojan-logo.webp" alt="" />
+            <img src="assets/images/plywood-brands/austin.webp" alt="" />
+            <img src="assets/images/plywood-brands/centuryply.webp" alt="" />
+            <img src="assets/images/plywood-brands/greenply.webp" alt="" />
+          </div>
+          <div class="pwood-wrapper">
+            <img src="assets/images/plywood-brands/trojan-logo.webp" alt="" />
+            <img src="assets/images/plywood-brands/austin.webp" alt="" />
+            <img src="assets/images/plywood-brands/centuryply.webp" alt="" />
+            <img src="assets/images/plywood-brands/greenply.webp" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="lam" id="laminations">
+        <h2>Lamination Brands</h2>
+        <div class="lamination-brands-slider">
+          <div class="lam-wrapper">
+            <img src="assets/images/laminations/image-1.webp" alt="" />
+            <img src="assets/images/laminations/image-2.webp" alt="" />
+            <img src="assets/images/laminations/image-3.webp" alt="" />
+            <img src="assets/images/laminations/image-4.webp" alt="" />
+            <img src="assets/images/laminations/image-5.webp" alt="" />
+          </div>
+
+          <div class="lam-wrapper">
+            <img src="assets/images/laminations/image-1.webp" alt="" />
+            <img src="assets/images/laminations/image-2.webp" alt="" />
+            <img src="assets/images/laminations/image-3.webp" alt="" />
+            <img src="assets/images/laminations/image-4.webp" alt="" />
+            <img src="assets/images/laminations/image-5.webp" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="our-std-hw" id="hw">
+        <h2>Our Standard Hardwares</h2>
+        <div class="std-hw-slider">
+          <div class="hw-wrapper">
+            <img src="assets/images/std-hw/blum.webp" alt="" />
+            <img src="assets/images/std-hw/cnr.webp" alt="" />
+            <img src="assets/images/std-hw/grass.webp" alt="" />
+            <img src="assets/images/std-hw/haefele.webp" alt="" />
+            <img src="assets/images/std-hw/hettich.webp" alt="" />
+            <img src="assets/images/std-hw/sleek.webp" alt="" />
+          </div>
+          <div class="hw-wrapper">
+            <img src="assets/images/std-hw/blum.webp" alt="" />
+            <img src="assets/images/std-hw/cnr.webp" alt="" />
+            <img src="assets/images/std-hw/grass.webp" alt="" />
+            <img src="assets/images/std-hw/haefele.webp" alt="" />
+            <img src="assets/images/std-hw/hettich.webp" alt="" />
+            <img src="assets/images/std-hw/sleek.webp" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="contact__us">
+        <h2 class="section-heading" id="contact-us">Contact Us</h2>
+        <div class="contact__us-wrapper">
+          <div class="contact__us-col book flex">
+            <img src="assets/icons/mobile.svg" alt="Mobile Icon" />
+            <p class="contact__us-text">Book An Appointment</p>
+            <a href="pages/book-now/book-now.html" class="btn" target="_blank"
+              >Book Now</a
+            >
+          </div>
+
+          <div class="contact__us-col visit flex">
+            <img src="assets/icons/location.svg" alt="Location Icon" />
+            <p class="contact__us-text">Visit Us</p>
+            <a
+              href="https://goo.gl/maps/voo7MB1h5CAzAq6H6"
+              target="_blank"
+              class="btn"
+              >Get Location</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img
+            style="height: 50px"
+            src="assets/images/logo/gold-logo.png"
+            alt=""
+          />
+          <h3>Tanu Industries</h3>
+        </div>
+
+        <p class="footer-links">
+          <a href="/" class="link-1">Home</a>
+
+          <a href="#about-us">About</a>
+
+          <a href="#our-services">Services</a>
+
+          <a href="#plywood-brands">Plywoods</a>
+
+          <a href="#laminations">Laminations</a>
+
+          <a href="#hw">Hardwares</a>
+        </p>
+
+        <p class="footer-company-name">
+          Tanu Industries - Interior Designing Company ©
           <script>
             document.write(new Date().getFullYear());
           </script>
-          Tanu Industry
         </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <img
+            src="assets/icons/marker.svg"
+            alt=""
+            class="footer-center-icon"
+          />
+          <p>
+            <span>Plot No 253B, P2, Belur Industrial Area,</span> Dharwad,
+            Karnataka-580011
+          </p>
+        </div>
+
+        <!-- <div>
+          img
+          <p>+1.555.555.5555</p>
+        </div> -->
+
+        <div>
+          <img
+            src="assets/icons/envelope.svg"
+            alt=""
+            class="footer-center-icon"
+          />
+          <p>
+            <a href="mailto:tanuindustry2408@gmail.com"
+              >tanuindustry2408@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Tanu Industries provides innovative and personalized interior design
+          solutions or guidance to the perfect space that tells your unique
+          story.
+        </p>
+
+        <div class="footer-icons">
+          <a
+            href="https://www.facebook.com/profile.php?id=61552589544313"
+            target="_blank"
+          >
+            <img src="assets/icons/fb.svg" alt="" />
+          </a>
+          <a
+            href="https://instagram.com/tanu_interiors?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+          >
+            <img src="assets/icons/insta.svg" alt="" />
+          </a>
+          <a href="https://wa.me/message/7AKTISV2GDPIO1" target="_blank">
+            <img src="assets/icons/wa.svg" alt="" />
+          </a>
+        </div>
       </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
